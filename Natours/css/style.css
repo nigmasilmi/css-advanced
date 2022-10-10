@@ -12,6 +12,12 @@ Dark green: #28b485
   padding: 0;
   box-sizing: border-box;
 }
+html {
+  /* in this way we are removing the ability for the user to set the font-size */
+  /* font-size: 10px; */
+  /*100/16 = 62.5%*/
+  font-size: 62.5%;
+}
 
 body {
   font-family: "Lato", sans-serif;
@@ -19,7 +25,7 @@ body {
   font-size: 15px;
   line-height: 1.7;
   color: #777;
-  padding: 30px;
+  padding: 3rem;
 }
 
 .header {
@@ -38,12 +44,12 @@ body {
 
 .logo-box {
   position: absolute;
-  top: 40px;
-  left: 40px;
+  top: 4rem;
+  left: 4rem;
 }
 
 .logo {
-  height: 35px;
+  height: 3.5rem;
 }
 
 .text-box {
@@ -59,14 +65,14 @@ body {
   text-transform: uppercase;
   /* this is a fix to avoid the jump at the end */
   backface-visibility: hidden;
-  margin-bottom: 16px;
+  margin-bottom: 1.6rem;
 }
 
 .heading-primary-main {
   display: block;
-  font-size: 60px;
+  font-size: 6rem;
   font-weight: 400;
-  letter-spacing: 35px;
+  letter-spacing: 3.5rem;
 
   animation-name: moveInLeft;
   animation-duration: 1s;
@@ -77,20 +83,20 @@ body {
 
 .heading-primary-sub {
   display: block;
-  font-size: 20px;
+  font-size: 2rem;
   font-weight: 500;
-  letter-spacing: 17.4px;
+  letter-spacing: 1.74rem;
   animation: moveInRight 1s ease-out;
 }
 
 @keyframes moveInLeft {
   0% {
     opacity: 0;
-    transform: translateX(-100px);
+    transform: translateX(-10rem);
   }
 
   80% {
-    transform: translateX(10px);
+    transform: translateX(1rem);
   }
 
   100% {
@@ -102,11 +108,11 @@ body {
 @keyframes moveInRight {
   0% {
     opacity: 0;
-    transform: translateX(100px);
+    transform: translateX(10rem);
   }
 
   80% {
-    transform: translateX(-10px);
+    transform: translateX(-1rem);
   }
 
   100% {
@@ -118,11 +124,11 @@ body {
 @keyframes moveInBottom {
   0% {
     opacity: 0;
-    transform: translateY(30px);
+    transform: translateY(3rem);
   }
 
   80% {
-    transform: translateY(-10px);
+    transform: translateY(-1rem);
   }
 
   100% {
@@ -138,18 +144,19 @@ body {
   display: inline-block;
   text-transform: uppercase;
   text-decoration: none;
-  padding: 15px 40px;
-  border-radius: 100px;
+  padding: 1.5rem 4rem;
+  border-radius: 10rem;
   position: relative;
+  font-size: 1.6rem;
 }
 
 .btn:hover {
-  transform: translateY(-3px);
+  transform: translateY(-0.3rem);
 }
 
 /* when it is clicked */
 .btn:active {
-  transform: translateY(-1px);
+  transform: translateY(-0.1rem);
 }
 
 .btn-white {
@@ -165,7 +172,7 @@ body {
   display: inline-block;
   height: 100%;
   width: 100%;
-  border-radius: 100px;
+  border-radius: 10rem;
   position: absolute;
   top: 0;
   left: 0;
