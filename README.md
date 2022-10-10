@@ -130,3 +130,15 @@ not declared but the font-size can be inherited
   INHERITANCE OF A PROPERTY ONLY WORKS IF NO ONE DECLARES A VALUE FOR THAT PROPERTY
   THE COMPUTED VALUE OF A PROPERTY IS WHAT GETS INHERITED, NOT THE DECLARED VALUE
   THE INITIAL KEYWORD REFERS TO THE INITIAL VALUE FOR A PROPERTY
+
+## Website rendering: the visual formatting model
+
+Algorithm that calculates boxes and determines the layout of these boxes for each element in the render tree in order to determine the final layout of the page.
+Takes into account:
+
+- Dimesions of boxes: the box model;
+- Box type: inline, block and inline-block
+- Positioning scheme: floats and positioning;
+- Stacking contexts,
+- Other elements in the render tree
+- Viewport size, dimensions of images, etc.
