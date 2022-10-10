@@ -89,3 +89,31 @@ The last declaration in the code will override and win.
 
 - Rely more on specificity than on the order of selectors.
 - Rely on order when using 3rd party stylesheets
+
+## How CSS is parsed: Part 2: Value Processing
+
+1. Declared value (author declarations) --- width 140px vs 66% --- padding
+2. Cascaded value (afther the cascade) ---- 66% --- -
+3. Specified value (defaulting, if there is no cascaded value) ---66% -
+4. Computed value (converting relative values to absolute) --- 66% --- 0px(initial value)
+5. Used value (final calculations, based on layout)----184.8px --- 0px
+6. Actual value (browser and device restrictions) ---185px --0px
+
+The font size by default is 16px even if we do not define them as declared
+The font-size ej: 1.5rem, 1.5rem, 1.5rem, 24px, 24px, 24px
+not declared but the font-size can be inherited
+
+## How units are converted from relative to absolute (px)
+
+- % for fonts x% \* parent's computed font-size
+- % for lengths x% \* parent's computed width
+
+- Font-based em and rem
+
+  - em for fonts uses the parent font-size
+  - em for lengths uses x \* current element computed font-size
+  - rem for font-sizes and lengths both uses x \* root computed font-size
+
+- Based on the browser's viewport
+  - vh x\*1% of viewport height
+  - vw x\*1% of viewport width
