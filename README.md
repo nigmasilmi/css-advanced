@@ -117,3 +117,16 @@ not declared but the font-size can be inherited
 - Based on the browser's viewport
   - vh x\*1% of viewport height
   - vw x\*1% of viewport width
+
+## How CSS is parsed: Part 3: Inheritance
+
+- A way of propagating elements from parents to children
+- Each css property must have a value even if we don´t declare them
+  ---> is there a cascaded value?
+  --> yes, use that ona
+  ---> no...is the property inherited (specific to each property)?
+  ------> yes specified value = computed value of the parent element
+  ------> no specified value = initial value(specific to each property)
+  INHERITANCE OF A PROPERTY ONLY WORKS IF NO ONE DECLARES A VALUE FOR THAT PROPERTY
+  THE COMPUTED VALUE OF A PROPERTY IS WHAT GETS INHERITED, NOT THE DECLARED VALUE
+  THE INITIAL KEYWORD REFERS TO THE INITIAL VALUE FOR A PROPERTY
