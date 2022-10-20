@@ -2,7 +2,6 @@
   // if there is enough width set to 11.4
   // if not, it gets the available space
   max-width: $grid-width;
-  background-color: #eee;
   margin: 0 auto;
   margin-bottom: $gutter-vertical;
   //.row:not(:last-child)
@@ -13,8 +12,6 @@
   @include clearfix;
 
   [class^="col"] {
-    background-color: orangered;
-    color: $color-white;
     float: left;
 
     &:not(:last-child) {

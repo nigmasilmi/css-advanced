@@ -90,6 +90,12 @@ body {
     transform: skewY(2deg) skewX(15deg) scale(1.1);
     text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.25); }
 
+.u-center-text {
+  text-align: center; }
+
+.u-margin-bottom-8 {
+  margin-bottom: 8rem; }
+
 .btn {
   /* when it is clicked */ }
   .btn:link, .btn:visited {
@@ -151,7 +157,6 @@ body {
 
 .row {
   max-width: 114rem;
-  background-color: #eee;
   margin: 0 auto;
   margin-bottom: 8rem; }
   .row:not(:last-child) {
@@ -161,8 +166,6 @@ body {
     display: table;
     clear: both; }
   .row [class^="col"] {
-    background-color: orangered;
-    color: #fff;
     float: left; }
     .row [class^="col"]:not(:last-child) {
       margin-right: 6rem; }
