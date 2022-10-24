@@ -171,13 +171,21 @@ body {
   transform: translateY(-0.2rem); }
 
 .card {
+  position: relative;
   perspective: 150rem;
-  -moz-perspective: 150rem; }
+  -moz-perspective: 150rem;
+  width: 20rem;
+  height: 50rem; }
   .card__side {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
     color: #fff;
     font-size: 2rem;
     height: 50rem;
-    transition: all 0.8s; }
+    transition: all 0.8s ease;
+    backface-visibility: hidden; }
     .card__side--front {
       background-color: orangered; }
     .card__side--back {
