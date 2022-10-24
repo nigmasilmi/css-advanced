@@ -170,6 +170,24 @@ body {
   box-shadow: 0 1.5rem 1rem rgba(0, 0, 0, 0.15);
   transform: translateY(-0.2rem); }
 
+.card {
+  perspective: 150rem;
+  -moz-perspective: 150rem; }
+  .card__side {
+    color: #fff;
+    font-size: 2rem;
+    height: 50rem;
+    transition: all 0.8s; }
+    .card__side--front {
+      background-color: orangered; }
+    .card__side--back {
+      background-color: green;
+      transform: rotateY(180deg); }
+  .card:hover .card__side--front {
+    transform: rotateY(180deg); }
+  .card:hover .card__side--back {
+    transform: rotateY(0deg); }
+
 .composition {
   position: relative; }
   .composition__photo {
@@ -276,3 +294,8 @@ body {
   transform: skewY(-7deg); }
   .section-features > * {
     transform: skewY(7deg); }
+
+.section-tours {
+  background-color: #f7f7f7;
+  padding: 25rem 0;
+  margin-top: -10rem; }
