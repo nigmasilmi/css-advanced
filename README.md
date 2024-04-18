@@ -1,5 +1,5 @@
 # Advanced CSS and Sass: Flexbox, Grid, Animations and More!
 
-## Udemy Course by Jonas Schmdmetmann
+## Udemy Course by Jonas Schmedtmann
 
 ### projects, practice and notes
