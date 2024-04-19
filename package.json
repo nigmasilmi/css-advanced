@@ -1,0 +1,14 @@
+{
+  "name": "css-advanced",
+  "version": "1.0.0",
+  "description": "CSS andvance practice",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.75.0"
+  }
+}
