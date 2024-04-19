@@ -4,7 +4,8 @@
   "description": "CSS andvance practice",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "compile:sass": "sass Natours/sass/main.scss Natours/css/style.css",
+    "compile:sass:watch": "sass Natours/sass/main.scss Natours/css/style.css -w"
   },
   "author": "",
   "license": "ISC",
