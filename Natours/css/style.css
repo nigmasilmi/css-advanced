@@ -21,22 +21,18 @@ body {
   background-position: top;
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
 }
-
 .header__logo-box {
   position: absolute;
   top: 40px;
   left: 40px;
 }
-
 .header__logo {
   height: 35px;
 }
-
-.logo:hover {
+.header__logo:hover {
   animation-name: moveInRight;
   animation-duration: 400ms;
 }
-
 .header__text-box {
   position: absolute;
   top: 50%;
@@ -51,8 +47,7 @@ body {
   text-align: center;
   margin-bottom: 60px;
 }
-
-.heading-primary-main {
+.heading-primary--main {
   display: block;
   font-size: 60px;
   font-weight: 400;
@@ -65,8 +60,7 @@ body {
   /* used to avoid shaking at the animation end */
   backface-visibility: hidden;
 }
-
-.heading-primary-sub {
+.heading-primary--sub {
   display: block;
   font-size: 18.4px;
   font-weight: 700;
@@ -114,8 +108,7 @@ body {
     transform: translate(0);
   }
 }
-.btn:link,
-.btn:visited {
+.btn:link, .btn:visited {
   position: relative;
   display: inline-block;
   text-transform: uppercase;
@@ -124,22 +117,25 @@ body {
   border-radius: 100px;
   transition: all 0.2s;
 }
-
-.btn-white {
+.btn--white {
   background-color: #fff;
   color: #777;
 }
-
+.btn--white::after {
+  background-color: #fff;
+}
 .btn:hover {
   transform: translateY(-3px);
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
 }
-
+.btn:hover::after {
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
+}
 .btn:active {
   transform: translate(1px);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
-
 .btn::after {
   content: "";
   display: inline-block;
@@ -152,17 +148,7 @@ body {
   z-index: -1;
   transition: all 200ms;
 }
-
-.btn-white::after {
-  background-color: #fff;
-}
-
-.btn:hover::after {
-  transform: scaleX(1.4) scaleY(1.6);
-  opacity: 0;
-}
-
-.btn-animated {
+.btn--animated {
   animation: moveInButton 0.5s ease-out;
   animation-delay: 0.3s;
   animation-fill-mode: backwards;
