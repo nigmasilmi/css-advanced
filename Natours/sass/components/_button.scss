@@ -8,7 +8,7 @@
     padding: 1.5rem 4rem;
     border-radius: 10rem;
     transition: all 0.2s;
-    font-size: 1.6rem;
+    font-size: $default-font-size;
   }
 
   &--white {
@@ -52,5 +52,30 @@
     animation: moveInButton 0.5s ease-out;
     animation-delay: 0.3s;
     animation-fill-mode: backwards;
+  }
+}
+
+.btn-text {
+  &:link,
+  &:visited {
+    font-size: $default-font-size;
+    color: $color-primary;
+    display: inline-block;
+    padding: 0.1rem 0.2rem;
+    text-decoration: none;
+    border-bottom: 1px solid $color-primary;
+    transition: all 0.2s;
+  }
+
+  &:hover {
+    background-color: $color-primary;
+    color: $color-common-white;
+    box-shadow: 0 1rem 2rem rgba($color-common-black, 0.2);
+    transform: translateY(-0.2rem);
+  }
+
+  &:active {
+    background-color: $color-primary-dark;
+    border: 1px solid $color-primary-dark;
   }
 }
