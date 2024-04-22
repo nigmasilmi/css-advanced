@@ -144,3 +144,22 @@ In this example:
 - `animation-fill-mode: forwards;` ensures that after the animation completes, the element retains the styles defined in the last keyframe (`100%`)—in this case, it remains visible (`opacity: 1;`) and in its final position (`transform: translateX(0);`).
 
 Adjusting the `animation-fill-mode` property allows you to control how elements behave before and after CSS animations, providing more control over the animation effects and their impact on the layout.
+
+## outline vs border
+
+In CSS, both `outline` and `border` are used for styling elements, but they serve different purposes:
+
+1. **Border:**
+
+   - The `border` property is used to create a visible border around an element.
+   - It has three main components: `border-width`, `border-style`, and `border-color`, which define the width, style (such as solid, dashed, double, etc.), and color of the border, respectively.
+   - Borders are part of the box model and affect the size and layout of the element they are applied to.
+   - Borders can be applied individually to each side of an element (top, right, bottom, left), or all sides at once using the `border` shorthand property.
+
+2. **Outline:**
+   - The `outline` property is used to create a non-rectangular border around an element, typically used to highlight an element without affecting its layout.
+   - It is often used for focus states, such as when an element receives keyboard focus or is clicked.
+   - The `outline` property has three main components: `outline-width`, `outline-style`, and `outline-color`, which define the width, style (such as solid, dashed, double, etc.), and color of the outline, respectively.
+   - Unlike borders, outlines do not affect the size or layout of the element they are applied to. They are drawn outside the element's border box and do not take up space.
+
+In summary, the main difference is that `border` affects the size and layout of an element, while `outline` is used for visual styling without affecting the layout. Additionally, outlines are typically used for focus states or to highlight elements temporarily, whereas borders are more commonly used for structural styling.
